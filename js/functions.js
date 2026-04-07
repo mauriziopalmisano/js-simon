@@ -44,5 +44,8 @@ function answers_check(array_number, list_answers) {
             array_result.push(array_answers[i]);
         }
     }
+    for (let i = 0; i < list_answers.length; i++) {
+        list_answers[i].disabled = true;
+    }
     result.innerText = `Hai memorizzato ${array_result.length} numeri e sono ${array_result}`;
 }
